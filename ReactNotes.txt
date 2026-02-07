@@ -1,0 +1,30 @@
+Namaste React Web Series code repository
+https://github.com/namastedev/namaste-react
+NetflixGPT Project Github repository -
+https://github.com/akshaymarch7/netflix-gpt
+YouTube Project GitHub repository -
+https://github.com/akshaymarch7/namaste-youtube
+
+
+>VS Code Uses Emmet to give skeleton codes
+
+>CDN
+>crossorigin
+>DOM
+>JSX
+>crossorigin in script tag
+
+React is a java script library
+
+react.development.js -> core file
+react-dom.development.js -> useful for DOM operations
+
+Basic program:
+    const heading =React.createElement("h1", {id:"heading"}, "Hello, Abdul Rahman from React!");
+    console.log(heading);
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading); // will not append , it will replace
+
+Reactelement is a object while render in changes to javascript 
+
+why React is called Library not Framework
