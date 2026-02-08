@@ -1,18 +1,46 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", {id:"parent"},
-     [React.createElement("div", {id:"child1"},
-        [React.createElement("h1", {id:"h1"}, "I adsssadsam h1 tag"),React.createElement("h2", {id:"h2"}, "I am h2 tag")],
-     ),React.createElement("div", {id:"child2"},
-        [React.createElement("h1", {id:"h3"}, "I am h3 tag"),React.createElement("h2", {id:"h4"}, "I am h4 tag")],
-     )]
+const jsxHeading = (
+  <div>
+    <h1 id="id1" className="heading">
+      Actual JSX Heading
+    </h1>
+    <h1 id="id2" className="heading2">
+      Actual JSX Heading 2
+    </h1>
+    <img
+      src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+      alt="Google Logo"
+    />
+    <a href="https://www.google.com" target="_blank">
+      Visit Google
+    </a>
+  </div>
 );
-console.log(parent);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
 
-// const heading =React.createElement("h1", {id:"heading"}, "Hello, Abdul Rahman from React!");
-// console.log(heading);
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
+const Title = () => {
+  return (
+    <h1 id="id1" className="heading">
+      Actual JSX Heading
+    </h1>
+  );
+};
+
+const HeadingComponent = () => {
+  return (
+    <div id="container">
+      <Title />
+      <img
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="Google Logo"
+      />
+      <a href="https://www.google.com" target="_blank">
+        Visit Google
+      </a>
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent />);

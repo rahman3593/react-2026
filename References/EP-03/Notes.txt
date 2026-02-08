@@ -1,0 +1,23 @@
+npm run {script}
+
+jsx => 
+jsx is not a part of react.,
+jsx makes developer life easy
+javascript merges html and js together
+jsx is not html written inside javascript ; it is html like syntax
+
+
+jsx code is transpiled before it reaches JS engine in browser.
+parcel is reponsible for this transpiling - parcel uses babel package for transpiling
+
+jsx =(babel reponsible)> react.createelement => react js object => html element
+jsx attributes are in camel case
+
+React Component
+1) Class based COmponent - old way
+2) Functional Component - new 
+    > Just a js functions that return jsx code
+
+component composition => component inside a component
+
+JSX stops malicious data
