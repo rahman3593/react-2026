@@ -1,0 +1,31 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is React learning code",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahman3593/react-2026.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Abdul Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahman3593/react-2026/issues"
+  },
+  "homepage": "https://github.com/rahman3593/react-2026#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "browserlist": [
+    "last 2 versions"
+  ]
+}

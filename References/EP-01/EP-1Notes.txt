@@ -28,3 +28,5 @@ Basic program:
 Reactelement is a object while render in changes to javascript 
 
 why React is called Library not Framework
+
+● What is async and defer

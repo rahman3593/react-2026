@@ -1,0 +1,56 @@
+npm -> abbrevation is not node packkage manger
+but it manages packages
+npx -> executing the package "npx {Package_name}"
+
+package.json is the configurations for npm 
+packages are also called as dependencies
+project is dependt on other packages and those package depend on other packages.
+
+package-lock.json -> 
+keeps a tract of extract version. for eg in package.json i have ^2.8.3 in one package, if there is a updgrade version available. in package lock it clearly mentions as 2.8.4
+integratity in package-lock.json- >hash key to confirm production and local has same version
+
+
+
+
+Bundler:
+our code has to be bundled/minified/compressed/cleaned before sending to production.
+bundler bundles/packages the app to ship to production.
+e.g., webpack,parcel,wheat
+
+npm install -D {Package_name} or  npm i {Package_name}
+-D is DEV
+whithout -D is notrmal which is used on production
+
+devDependencies in package.json has all dev dependencies
+
+2.8.2 - no updates will be considered
+^2.8.2 - caret  - minor upgrades - it will automatically to 2.8.4 . it will not do major update
+~2.8.2 - tiled - it will automatically install major upgrade - e.g 3.0.3
+
+node_modules fodler - contains all fodler of packages
+
+transistive dependcies -> package depend on other project and other project depend on other project
+every package has its own package.json own dependencies
+
+parcel
+- Dev Build
+- Local Server
+- HMR = Hot module replacement
+- File watching algorith - written in c++
+- Caching - Faster Builds
+- IMage Optimization
+- Minification
+- Bundling
+- Compressing
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling 
+- Diagnostic
+- Error Handling
+- Https
+- Tree Shaking - remove unused code
+- Different bundle for dev and prod
+
+
+browserslist package what all browser our app will support
