@@ -1,0 +1,20 @@
+Named Export
+e.g
+export const CDN_URL =
+  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+export const LOGO_URL =
+  "https://cdn.vectorstock.com/i/500p/46/06/food-bowl-with-lid-amp-spoon-icon-vector-60884606.jpg";
+
+Named Import
+import { LOGO_URL } from "../utils/constants";
+
+
+React Hooks => normal JS utility function given by React
+-useState() - state variables in React
+-useEffect()
+
+state variable updates => react will rerender the components
+ 
+virtual DOM
+reconcilation  algorithm (react fiber), Diff algorithm finds out the diff between the Actual dom and virtual DOM
+Array Destructuring
