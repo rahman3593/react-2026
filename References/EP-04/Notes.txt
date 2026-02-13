@@ -1,0 +1,4 @@
+Props => Argumetns to the function 
+config driven UI => UI is driven from config which comes from backend. all details like backgroud colour will come from backend
+cloudinary => cdn
+dont use index as key in map function. react offical doc.
