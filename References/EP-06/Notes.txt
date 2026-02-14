@@ -1,0 +1,11 @@
+Monolith and Microservices
+seperation of concerns
+single reposibilty principle
+parameters vs arguments
+
+useEffect callback function is called after the rendering is completed
+CORS 
+optional chaining
+shimmer UI
+conditional rendering
+whenever state variable update react triggersa reconcillation cycle (re renders the component)

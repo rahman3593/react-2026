@@ -48,3 +48,28 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+
+.shimmer-card{
+    width: 200px;
+    height: 250px;
+    background-color: #e0e0e0;
+    margin: 10px;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-btn{
+    padding: 10px 20px;
+    background-color: #344a63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter{
+    display: flex;
+}
