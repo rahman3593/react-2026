@@ -1,0 +1,25 @@
+ useEffect(() => {
+    console.log("useEffect called");
+  }, []);
+
+  [] > dependency array
+  if no dependency array useEffect is called on every component render
+  if empty dependency array useEffect called on only inital render (Just Once) 
+  if dependency array is given [btnName] > called everytime btnName is updated
+  useState dont call outside the function componenet
+
+
+  React Router
+  Routing configuration
+
+  useRouteError 
+
+  <a href> will do page reload. to avaoid that we use <link> from react router dom
+
+  single page application
+
+  2 types of routing:
+  1-Client side Routing
+  2-Server side Routing
+
+  Dynamic Routing
