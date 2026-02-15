@@ -1,0 +1,45 @@
+Class COmponenet has render method that returns JSX
+this.state = {}
+setState
+
+First constructor is called > Render
+
+constructor() -> Render() - > componentDidMount()
+
+
+componentDidMount > to make api call mostly
+
+what is  super(props);
+In React (or any ES6 class that extends another class), super(props) is used inside the constructor of a child class to call the parent class’s constructor with the props argument.
+Breaking it down:
+- super: Refers to the parent class. In React, when you write class MyComponent extends React.Component, the parent class is React.Component.
+- props: These are the properties passed into your component, like <MyComponent title="Hello" />.
+Why you need it:
+- Initialize the parent class
+React’s Component class needs to be initialized with props so it can set up things like this.props internally.
+- Enable this.props in your constructor
+Without super(props), you cannot access this.props inside the constructor. Example:
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props); // initializes React.Component with props
+    console.log(this.props.title); // works
+  }
+  render() {
+    return <h1>{this.props.title}</h1>;
+  }
+}
+
+
+- If you wrote just super() without passing props, then inside the constructor this.props would be undefined.
+
+
+REact liefe cycle
+
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+Render Phase and commit Phase
+
+constructor and Render is called in Render Phase 
+componentDidMount called in commit phase
+
+for functional Component in useEffect() has return  called usereffect return to simillar to componentWillUnmount
