@@ -1,0 +1,4 @@
+Single Responsibility Principle
+easyily testable
+
+Chunking /Code Splitting/lazy loading/dynamic bundling/lazy Loading/OnDemand Loading in bundling

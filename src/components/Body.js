@@ -2,36 +2,27 @@ import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router";
+import useRestarauntsList from "../utils/useRestarauntsList";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
-  //Local state variable
+  // Local state variables
   const [listOfRestaruants, setlistOfRestaruants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
-
   const [searchInput, setSearchInput] = useState("");
 
+  const restaurantList = useRestarauntsList();
   useEffect(() => {
-    //API call
-    fetchData();
-  }, []);
+    setlistOfRestaruants(restaurantList);
+    setFilteredRestaurants(restaurantList);
+  }, [restaurantList]);
 
-  const fetchData = async () => {
-    const data = await fetch(
-      "https://corsproxy.io/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING",
-    );
-    const json = await data.json();
+  const onlineStatus = useOnlineStatus();
+  if (onlineStatus === false) {
+    return <h1>🔴 You are offline, Please check your internet connection!!</h1>;
+  }
 
-    setlistOfRestaruants(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants,
-    );
-    setFilteredRestaurants(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants,
-    );
-  };
-
-  return listOfRestaruants.length === 0 ? (
+  return !Array.isArray(listOfRestaruants) || listOfRestaruants.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="body">
